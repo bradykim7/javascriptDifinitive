@@ -56,7 +56,7 @@
         let x = Math.pow(1+ interest, payments);
         let monthly = (principal * x *interest) /(x-1);
 
-        let payment = document.getElementById("payments");
+        let payment = document.getElementById("payment");
         let total = document.getElementById("total");
         let totalinterest = document.getElementById("totalinterest");
 
@@ -69,7 +69,7 @@
         }
         // monthly is infinite value
         else{
-            payments.innerHTML ="";
+            payment.innerHTML ="";
             total.innerHTML ="";
             totalinterest.innerHTML = "";
         }
